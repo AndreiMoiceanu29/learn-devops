@@ -42,7 +42,7 @@ pipeline {
                     params.executeTest
                 }
             }
-            parralel {
+            parallel {
                 stage('Unit Test') {
                     steps {
                         echo "Running the unit test"
